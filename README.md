@@ -22,9 +22,9 @@ Next, we import the `random` library into our `main.py` file. After this, we nee
 
 ```python
 print("Winning Rules of the Rock paper scissor game as follows: \n"
-								+"Rock vs paper->paper wins \n"
-								+ "Rock vs scissor->Rock wins \n"
-								+"paper vs scissor->scissor wins \n") 
++"Rock vs paper->paper wins \n"
++ "Rock vs scissor->Rock wins \n"
++"paper vs scissor->scissor wins \n") 
 ```
 
 Now, we will create a *while loop* so that the user can play on as long as he/she/they want and then quit. Inside the loop we will first `print` in the choices and ask for the user to input a choice. The input will be an integer so that the user is not required to type the whole word thus improving the experience.
@@ -33,10 +33,10 @@ There is also a possibility that the user inputs an invalid value. Meaning, he c
 
 ```python
 while True: 
-	print("Enter choice \n 1. Rock \n 2. paper \n 3. scissor \n") 
-	
-	# take the input from user 
-	choice = int(input("User turn: "))
+print("Enter choice \n 1. Rock \n 2. paper \n 3. scissor \n") 
+
+# take the input from user 
+choice = int(input("User turn: "))
   
 # looping until user enter invalid input 
 while choice > 3 or choice < 1: 
@@ -46,38 +46,38 @@ while choice > 3 or choice < 1:
 Now we enter in the conditional statements. If the user chooses 1, we name the choice as **Rock**. If the user chooses 2, then **Paper** and if 3, we make it **Scissor**.
 
 ```python
-	if choice == 1: 
-		choice_name = 'Rock'
-	elif choice == 2: 
-		choice_name = 'paper'
-	else: 
-		choice_name = 'scissor'
+if choice == 1: 
+choice_name = 'Rock'
+elif choice == 2: 
+choice_name = 'paper'
+else: 
+choice_name = 'scissor'
 ```
 
 Next, to make it a bit interesting, we *output* the user's *input* and print in that now it's the computer's turn. 
 
 ```python
-	print("user choice is: " + choice_name) 
-	print("\nNow its computer turn.......") 
+print("user choice is: " + choice_name) 
+print("\nNow its computer turn.......") 
 ```
 
 Now we want the computer to choose randomly from 1, 2, or 3. Next we will loop this value until the computer's choice is equal to the `choice` value.
 
 ```python
 comp_choice = random.randint(1, 3) 
-	while comp_choice == choice: 
-		comp_choice = random.randint(1, 3) 
+while comp_choice == choice: 
+comp_choice = random.randint(1, 3) 
 ```
 
 After this, we define the computer's choice using conditionals and name it's choice either as Rock, Paper, or Scissor.
 
 ```python
-	if comp_choice == 1: 
-		comp_choice_name = 'Rock'
-	elif comp_choice == 2: 
-		comp_choice_name = 'paper'
-	else: 
-		comp_choice_name = 'scissor'
+if comp_choice == 1: 
+	comp_choice_name = 'Rock'
+elif comp_choice == 2: 
+	comp_choice_name = 'paper'
+else: 
+	comp_choice_name = 'scissor'
 ```
 
 Next, we want to print the computer's choice and compare the choice we made with it. Thus:
@@ -94,20 +94,20 @@ Here, if our choice is [1] (Rock) and  the computers choice is [2] (Paper) or ou
 ```python
 if((choice == 1 and comp_choice == 2) or
 (choice == 2 and comp_choice ==1 )): 
-	print("paper wins => ", end = "") 
-	result = "paper"
+print("paper wins => ", end = "") 
+result = "paper"
 ```
 
 Similar logic is applied for other scenarios as well.
 
 ```python
-	elif((choice == 1 and comp_choice == 3) or
-		(choice == 3 and comp_choice == 1)): 
-		print("Rock wins =>", end = "") 
-		result = "Rock"
-	else: 
-		print("scissor wins =>", end = "") 
-		result = "scissor"
+elif((choice == 1 and comp_choice == 3) or
+(choice == 3 and comp_choice == 1)): 
+	print("Rock wins =>", end = "") 
+	result = "Rock"
+else: 
+	print("scissor wins =>", end = "") 
+	result = "scissor"
 ```
 
 Now we want to print that who actually won. User? Or the computer?
@@ -115,20 +115,20 @@ Now we want to print that who actually won. User? Or the computer?
 Here we use the conditional and tell that if `result` is equal to `choice_name` then the user wins else the computer wins.
 
 ```python
-	if result == choice_name: 
-		print("<== User wins ==>") 
-	else: 
-		print("<== Computer wins ==>")
+if result == choice_name: 
+	print("<== User wins ==>") 
+else: 
+	print("<== Computer wins ==>")
 ```
 
 Now as this is a loop, we ask the user again that if he/she/they want to play another round.
 
 ```python
-	print("Do you want to play again? (Y/N)") 
-	ans = input() 
+print("Do you want to play again? (Y/N)") 
+ans = input() 
   
-  if ans == 'n' or ans == 'N': 
-		break
+ if ans == 'n' or ans == 'N': 
+	break
 ```
 
 Here, if the user's input is **n** or **N**, then this loop breaks and the program exits. If not, the program continues. Also, when this loop breaks, we will print a message thanking the player for playing.
