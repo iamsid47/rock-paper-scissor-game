@@ -2,19 +2,23 @@
 name: 'Rock Paper Scissor'
 description: 'Command line based Rock Paper Scissor Game using Python'
 author: '@iamsid47'
-img: https://github.com/iamsid47/hangman-pics/blob/main/hangman.png
+img: https://github.com/iamsid47/hangman-pics/blob/main/rock-paper-scissor.png
 ---
 
 *Hi Everyone! In this workshop, we will walkthrough how to build the game: ***Rock Paper Scissor!****
 
+![Rock. Paper. Scissor](https://github.com/iamsid47/hangman-pics/blob/main/rock-paper-scissor.png)
+
 This is a command line game and will be played with the computer. The chances of winning and loosing are random!
-You can try out this game on Repl.it using [THIS](https://repl.it/@iamsid47/rock-paper-scissor#main.py) link.
+You can try out this game on Repl.it using [THIS](https://repl.it/@iamsid47/rps#main.py) link.
 
 ## Files & Libraries
 
 There is going to be just one file for this workshop. We will be naming it as `main.py`. The `random` library will be required to the program to run.
 
 ## Let's Get Started!
+
+![Create a repl](https://github.com/iamsid47/hangman-pics/blob/main/rock-paper-scissor-repl.png)
 
 So let's head over to [Repl.it](https://repl.it) and create a *repl*. Choose the language as Python and name your repl.
 
@@ -139,6 +143,8 @@ print("\nThanks for playing")
 
 ## Voila!
 
+![Rock Paper Scissor](https://media.giphy.com/media/gZ5jPakg02sujkkkg5/giphy.gif)
+
 You just made your very own rock-paper-scissor game!
 
 ## Hack It ;)
@@ -150,3 +156,7 @@ The fun will begin when you make a GUI for this. You can surely use the `tkinter
 You can also make this game go multiplayer by making it browser-based and running it on a server. You will surely be required to install a lot of libraries (specially realated to networking) for this purpose.
 
 **The source code is in this repository and also on [Repl.it](https://repl.it/@iamsid47/rock-paper-scissor#main.py).**
+
+## How It Works
+
+![How it works](https://github.com/iamsid47/hangman-pics/blob/main/rps-how%20it%20works.png)
